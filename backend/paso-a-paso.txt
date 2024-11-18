@@ -1,0 +1,49 @@
+para instalar code en ubuntu (snap) la ultima actualización
+$ sudo snap install code --classic
+
+
+crear una carpeta donde se instalará el backend
+$ mkdir backend
+
+
+
+entrar a la carpeta backend
+$ cd backend
+
+crear el init para el backend
+$ npm init -y
+
+modificar el archivo generado /package.json
+
+{
+  "name": "deas-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./server/index.js",
+    "start": "node ./server/index.js"
+  },
+  "keywords": [],
+  "author": "Patricio Prieto Garay",
+  "license": "ISC",
+  "description": "Copia del sitio web deas.colproba.org.ar",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mongoose": "^8.8.1",
+    "nodemon": "^3.1.7"
+  }
+}
+
+
+
+
+y para instalar las dependencias:
+$ npm install bcrypt dotenv express mongoose nodemon os
+
+para ejecutar nodemon ./server/index.js
+$ npm run dev
+
+para ejecutar node ./server/index.js
+$ npm run start
