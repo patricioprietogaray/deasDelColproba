@@ -2,7 +2,7 @@
 # config/
 
 # Ignorar la carpeta node_modules
-node_modules/
+/backend/node_modules/
 
 # Ignorar archivos temporales o generados por el sistema operativo
 .DS_Store
