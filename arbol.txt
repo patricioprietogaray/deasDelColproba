@@ -1,0 +1,12 @@
+.
+├── config
+    └── .env
+├── package.json
+├── package-lock.json
+├── paso-a-paso.txt
+└── server
+    ├── index.js
+    └── module
+        └── getIP
+            └── getIP.js
+
